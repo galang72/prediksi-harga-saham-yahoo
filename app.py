@@ -1,22 +1,28 @@
 import os
-os.system('pip install tensorflow-cpu')
-import os
+# TETAP PAKAI INI: Penting agar Keras versi lama bisa terbaca
 os.environ["TF_USE_LEGACY_KERAS"] = "1"
+
 import streamlit as st
 import appdirs as ad
+# TETAP PAKAI INI: Mengatasi error permission di server Streamlit
 ad.user_cache_dir = lambda *args: "/tmp"
+
 import yfinance as yf
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
-#from tensorflow.keras.models import load_model
 from sklearn.metrics import mean_squared_error
 import math
 import plotly.graph_objects as go
 import h5py
 import json
+
+# TETAP PAKAI INI: Cara paling stabil memanggil model AI kamu
+import tensorflow as tf
 from tensorflow import keras
-from keras.models import model_from_json
+from tensorflow.keras.models import model_from_json, load_model
+
+# --- LANJUTKAN KODE APLIKASI KAMU DI BAWAH INI ---
 
 def load_legacy_model(model_path):
     with h5py.File(model_path, "r") as f:
