@@ -7,3 +7,4 @@ Scikit-Learn
 Plotly
 appdirs
 h5py
+keras
