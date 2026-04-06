@@ -1,4 +1,6 @@
 import os
+os.system('pip install tensorflow-cpu')
+import os
 os.environ["TF_USE_LEGACY_KERAS"] = "1"
 import streamlit as st
 import appdirs as ad
