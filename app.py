@@ -15,7 +15,7 @@ import math
 import plotly.graph_objects as go
 import h5py
 import json
-import keras
+from tensorflow import keras
 from keras.models import model_from_json
 
 def load_legacy_model(model_path):
