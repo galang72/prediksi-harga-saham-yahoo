@@ -5,3 +5,4 @@ Pandas
 Scikit-Learn
 #TensorFlow
 Plotly
+appdirs
