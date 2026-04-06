@@ -50,7 +50,7 @@ def load_legacy_model(model_path):
 
         # Daftar objek yang harus dikenali
         custom_objects = {
-            "Sequential": keras.models.Sequential,
+            "Sequential": tf.keras.models.Sequential,
             "LSTM": keras.layers.LSTM,
             "Dense": keras.layers.Dense,
             "InputLayer": keras.layers.InputLayer,
