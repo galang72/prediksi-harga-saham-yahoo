@@ -1,7 +1,8 @@
 streamlit
 yfinance
-NumPy
-Pandas
-Scikit-Learn
-TensorFlow
-Plotly
+pandas
+numpy
+scikit-learn
+tensorflow-cpu
+plotly
+h5py
