@@ -6,3 +6,4 @@ Scikit-Learn
 #TensorFlow
 Plotly
 appdirs
+h5py
